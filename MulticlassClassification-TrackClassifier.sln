@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackClassifier.MLModel", "TrackClassifier.MLModel\TrackClassifier.MLModel.csproj", "{EBD54172-6482-4E96-8CEB-1ECD0DCE046F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackClassifier.App", "TrackClassifier.App\TrackClassifier.App.csproj", "{9FB23193-5FB2-4D62-8269-C6516BB411F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBD54172-6482-4E96-8CEB-1ECD0DCE046F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBD54172-6482-4E96-8CEB-1ECD0DCE046F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBD54172-6482-4E96-8CEB-1ECD0DCE046F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBD54172-6482-4E96-8CEB-1ECD0DCE046F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FB23193-5FB2-4D62-8269-C6516BB411F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FB23193-5FB2-4D62-8269-C6516BB411F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FB23193-5FB2-4D62-8269-C6516BB411F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FB23193-5FB2-4D62-8269-C6516BB411F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F7DCE2E-0614-4653-9C55-CA0524A077C5}
+	EndGlobalSection
+EndGlobal
