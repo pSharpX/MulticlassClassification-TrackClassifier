@@ -37,8 +37,8 @@ namespace TrackClassifier
             {
                 Q7a = "0",
                 Q7b = "0",
-                Q7c = "1",
-                Q7d = "0",
+                Q7c = "0",
+                Q7d = "1",
                 Q8a = "0",
                 Q8b = "0",
                 Q8c = "0",
@@ -51,12 +51,12 @@ namespace TrackClassifier
                 Q9f = "0",
                 Q10a = "0",
                 Q10b = "0",
-                Q10c = "0",
+                Q10c = "1",
                 Q10d = "0",
-                Q10e = "1",
-                Qxa = "2",
+                Q10e = "0",
+                Qxa = "4",
                 Qxb = "2",
-                Qxc = "5",
+                Qxc = "4",
                 Qxd = "4",
             };
 
