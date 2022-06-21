@@ -50,5 +50,31 @@
 
         public string Qxd;
 
+        public AssessmentScoring()
+        {
+            Q7a = "0";
+            Q7b = "0";
+            Q7c = "0";
+            Q7d = "0";
+            Q8a = "0";
+            Q8b = "0";
+            Q8c = "0";
+            Q8d = "0";
+            Q9a = "0";
+            Q9b = "0";
+            Q9c = "0";
+            Q9d = "0";
+            Q9e = "0";
+            Q9f = "0";
+            Q10a = "0";
+            Q10b = "0";
+            Q10c = "0";
+            Q10d = "0";
+            Q10e = "0";
+            Qxa = "0";
+            Qxb = "0";
+            Qxc = "0";
+            Qxd = "0";
+        }
     }
 }
