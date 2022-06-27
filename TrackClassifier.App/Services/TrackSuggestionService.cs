@@ -32,8 +32,10 @@ namespace TrackClassifier.App.Services
             request.Questions.ForEach(question => _questionIdentifierService.Fill(assessmentScoring, question));
             AssessmentScoringPrediction prediction = _model.Predict(assessmentScoring);
             FullPrediction[] predictions = GetBestThreePredictions(prediction);
-            TrackSuggestionResponse response = new TrackSuggestionResponse();
-            response.Tracks = predictions.Select(prediction => new Track(prediction.Score, prediction.PredictedLabel)).ToList();
+            TrackSuggestionResponse response = new TrackSuggestionResponse
+            {
+                Tracks = predictions.Select(prediction => new Track(Guid.NewGuid().ToString(), prediction.Score, prediction.PredictedLabel.ToLower(), prediction.PredictedLabel)).ToList()
+            };
             _logger.LogInformation("END - Track Recommend execution");
             return response;
         }

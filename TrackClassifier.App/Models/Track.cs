@@ -8,9 +8,13 @@ namespace TrackClassifier.App.Models
     public class Track
     {
 
+        public string Id { get; set; }
+
         public float Score { get; set; }
 
         public string Name { get; set; }
+
+        public string Description { get; set; }
 
         public Track(float score, string name)
         {
@@ -18,5 +22,12 @@ namespace TrackClassifier.App.Models
             Name = name;
         }
 
+        public Track(string id, float score, string name, string description)
+        {
+            Id = id;
+            Score = score;
+            Name = name;
+            Description = description;
+        }
     }
 }

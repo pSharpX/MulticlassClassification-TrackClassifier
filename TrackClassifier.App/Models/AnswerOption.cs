@@ -15,5 +15,11 @@ namespace TrackClassifier.App.Models
         public int Score { get; set; }
 
         public bool Selected { get; set; }
+
+        public AnswerOption()
+        {
+            this.Code = string.Empty;
+            this.Selected = true;
+        }
     }
 }
