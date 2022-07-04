@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: track-classifier-api-deployment
+  labels:
+    app: sfit-discovery
+    component: track-classifier-api
+    version: 0.0.1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sfit-discovery
+      component: track-classifier-api
+      version: 0.0.1
+  template:
+    metadata:
+      labels:
+        app: sfit-discovery
+        component: track-classifier-api
+        version: 0.0.1
+    spec:
+      containers:
+        - name: track-classifier-api
+          image: psharpx/sfit-ml-track-suggestion-api:0.0.1
+          ports:
+            - containerPort: 80
+          env:
+            - name: MLModelPath
+              valueFrom:
+                secretKeyRef:
+                  name: sfit-discovery-secret
+                  key: MACHINE_LEARNING_MODEL_PATH
